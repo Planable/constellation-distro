@@ -1,6 +1,6 @@
 Package.describe({
   name: "planable:constellation",
-  version: "0.4.12",
+  version: "0.4.27",
   summary: "A curated set of packages for Constellation",
   git: "https://github.com/Planable/constellation-distro.git",
   documentation: "README.md",
@@ -10,17 +10,17 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom("2.3");
 
-  api.use("constellation:console@1.4.7");
-  api.use("babrahams:temple@0.4.7");
-  api.use("constellation:subscriptions@0.4.7");
-  api.use("constellation:session@0.4.7");
-  api.use("constellation:autopublish@0.4.7");
-  api.use("constellation:tiny@0.4.7");
-  api.use("constellation:position@0.4.7");
+  api.use("planable:console@1.4.11");
+  // api.use("planable:temple@0.4.11");
+  // api.use("planable:subscriptions@0.4.10");
+  // api.use("planable:session@0.4.12");
+  api.use("planable:autopublish@0.4.11");
+  api.use("planable:tiny@0.4.11");
+  api.use("planable:position@0.4.11");
   // api.use('lai:ddp-inspector@1.1.9');
-  api.use("constellation:plugins@0.4.9");
+  api.use("planable:plugins@0.4.11");
 
-  api.imply("constellation:console");
+  api.imply("planable:console");
 });
 
 Package.onTest(function(api) {
